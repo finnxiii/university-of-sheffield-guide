@@ -1,0 +1,144 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Source San 3', sans-serif;
+    font-style: normal;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+section {
+    padding: 2.5vh 5vw;
+    height: auto;
+    width: auto;
+}
+
+article {
+    margin: 2em 1em;
+    padding: 1.5em;
+    border-top: 1em solid #440099;
+    width: 100%;
+    background-color: #E7E9EA;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+img {
+    filter: brightness(85%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.5em 0 1em 0;
+}
+
+h1, h2, h3 {
+    color: #2B353E;
+    line-height: 1.5em;
+    padding-bottom: 8px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 550;
+    opacity: 0.9;
+    transition: 0.3s opacity ;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    border: none;
+    border-radius: 1vh;
+    width: 90%;
+    margin: 0 5%;
+    height: 0.5em;
+    background-color: #D0D2D4;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    padding: 1em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 1px;
+    background-color: #9ADBE8;
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.button:hover {
+    opacity: 0.8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+.button:active {
+    opacity: 0.6;
+    transform: scale(0.98); /* Slight scale-down for pressed effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    background-color: #9ADBE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.scroll-icon {
+    fill: "#2B353E";
+    width: 50px;
+    height: 50px;
+    padding-left: 14px;
+}

@@ -1,0 +1,87 @@
+/* NAVIGATION BAR */
+
+#top-nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    padding: 10px 20px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle {
+    display: none; /* hidden by default */
+}
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-around;
+    row-gap: 5px;
+    margin-right: 1em;
+    width: 30px;
+    height: 24px;
+    flex-direction: column;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #131E29;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Transform to 'X' when checked */
+.menu-toggle:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(7.5px, 6px);
+}
+
+.menu-toggle:checked + .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(7.5px, -6px);
+}
+
+#top-nav-list {
+    position: absolute; 
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: rgba(90, 98, 105, 1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    padding: 1em 1.5em;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#top-nav-list li {
+    font-size: 0.9em;
+}
+
+#top-nav-list a {
+    color: #FEFEFE;
+    font-weight: normal;
+    font-optical-sizing: auto;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Show the full-screen menu when the checkbox is checked */
+.menu-toggle:checked ~ #top-nav-list{
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+}

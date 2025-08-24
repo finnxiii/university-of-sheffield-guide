@@ -1,0 +1,87 @@
+/* FOR DESKTOP SCREEN */
+
+@media screen and (min-width: 1024px) {
+
+    img {
+        height: 50%;
+    }
+
+    .main-section hr:last-child {
+        display: none;
+    }
+
+    #top-nav {
+        height: 12vh;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    #top-nav-list {
+        position: static;
+        width: auto;
+        background-color: transparent; /* Transparent background to blend with the header */
+        display: flex;
+        flex-direction: row; /* Horizontal layout for desktop */
+        column-gap: 2em; /* Space between items in a row */
+        max-height: none; /* Remove max-height restriction */
+        opacity: 1; /* Fully visible */
+        visibility: visible; /* Make sure it’s always visible */
+        overflow: visible; /* No need to hide overflow */
+        transition: none; /* Remove transitions */
+    }
+
+    #top-nav-list a {
+        color: #2B353E;
+        font-size: 1.2em;
+    }
+
+    #top-nav-list a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        height: 20%;
+        width: 0;
+        border-radius: 2px;
+        background-color: #9ADBE8;
+        transition: width 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+        transform: translateX(-50%); 
+    }
+    
+    #top-nav-list a:hover::after {
+        width: 100%;
+    }
+
+    /* MAIN CONTENT */
+
+    .content-wrapper {
+        flex-direction: row;
+        margin: 0 4em;
+    }
+
+    .main-section {
+        width: 70vw;
+    }
+
+    .side-section {
+        flex-direction: column;
+        justify-content: initial;
+        width: 30vw;
+    }
+
+    #home-img {
+        height: 50vh;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .google-map {
+        height: 40vh;
+    }
+
+    .heading {
+        padding-left: 7em;
+    }
+}

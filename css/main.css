@@ -1,0 +1,361 @@
+/* HOME PAGE MAIN CONTENT */
+
+.side-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+#home-fig {
+    margin: 0;
+}
+
+#home-img {
+    width: 100%;
+    height: auto;
+}
+
+.text-group {
+    padding: 1vh 0;
+}
+
+.text-group p {
+    font-size: 1.1em;
+    padding: 0.5em 0;
+    color: #2B353E;
+}
+
+#welcome-text h1 {
+    color: #440099;
+}
+
+#admin-text {
+    height: auto;
+}
+
+/* ASIDE */
+
+.socials-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}
+
+.socials {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+
+/* VENDOR PAGE MAIN CONTENT */
+
+.google-map {
+    width: 100%;
+    height: 35vh;
+    margin: 1em 0;
+}
+
+.intro a {
+    font-size: 1.1em;
+    color: #440099;
+}
+
+.option-list {
+    list-style: disc;
+    margin: 3px 1em;
+}
+
+.option-list li {
+    line-height: 2.5em;
+}
+
+.option-list li::marker {
+    color: #2B353E;
+}
+
+.options p {
+    font-size: 0.95em;
+}
+
+.options > p:first-of-type,
+.intro p,
+.outro p {
+    font-size: 1em;
+}
+
+.outro p,
+.outro a {
+    padding: 0 2px;
+}
+
+.option-list a,
+.outro a {
+    color: #440099;
+    transition: color 0.3s ease;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #D0D2D4;
+    border-radius: 1.5px;
+}
+
+.option-list a:hover,
+.outro a:hover {
+    color: #005A8F;
+}
+
+/* PICNIC PAGE MAIN CONTENT */
+
+.quote-icon {
+    fill: #440099;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+blockquote p {
+    font-weight: 100;
+}
+
+/* QUIZ PAGE MAIN CONTENT */
+
+.intro h3 {
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+.play-guide {
+    margin: 1em auto;
+}
+
+.play-guide li {
+    margin: 0.5em;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.quiz h3 {
+    margin-bottom: 0.5em;
+}
+
+.quiz p {
+    font-size: 1em;
+    font-weight: normal;
+    padding-top: 1em;
+}
+
+.quiz img {
+    width: 100%;
+    height: 50vh;
+}
+
+.question-option {
+    border: 1px solid #2B353E;
+    border-radius: 0.3em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.answers {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    outline: none;   
+    margin-right: 1em;
+    border-radius: 50%;
+    border: 2px solid #FEFEFE;
+    background-color: #FEFEFE;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.answers:checked {
+    background-color: #440099;
+    border-color: #FEFEFE;
+}
+
+.answers::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: white; /* The inner dot */
+    border-radius: 50%;
+}
+
+.question-option label {
+    cursor: pointer;
+}
+
+.dropdown-container p {
+    color: #440099;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Change color of text when hovering */
+  }
+
+.dropdown-container span {
+    display: none;  /* Initially hidden */
+    color: #2B353E;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 10px; /* Space between question and answer */
+    opacity: 0;  /* Start with invisible answer */
+    transform: translateX(-20px); /* Start from the left */
+    transition: opacity 0.5s ease, transform 0.5s ease, color 0.3s ease;
+}
+
+.dropdown-container p:hover + span {
+    display: inline-block;  /* Make the answer appear */
+    opacity: 1;  /* Fade in the answer */
+    transform: translateX(0);  /* Slide into place */
+}
+
+.dropdown-container p:hover {
+    color: #9ADBE8; /* Change to a vibrant color when hovered */
+  }
+
+/* CONTACT PAGE MAIN CONTENT */
+
+#contact-us {
+    position: relative;
+    background-image: url('../images/contact-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+#contact-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black overlay */
+    z-index: 1; /* Ensures the overlay is above the background but below content */
+}
+
+#contact-us h1 {
+    position: relative;
+    color: #FEFEFE;
+    z-index: 2;
+    border-bottom: 7px solid #440099;
+    padding-bottom: 4px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7); /* Horizontal offset: 2px, Vertical offset: 2px, Blur radius: 5px, Color: semi-transparent black */
+}
+
+.contact-info {
+    margin: 1em;
+    width: 100%;
+    padding: 3vh 10%;
+}
+
+.contact-info p{
+    font-size: 1em;
+}
+
+.contact-form {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin: 10%;
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    margin-top: 15px;
+    color: #2B353E;
+    font-size: 0.9em;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375em;
+    font-family: 'Source San 3', sans-serif;
+}
+
+#message {
+    resize: vertical;
+    min-height: 20em;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    letter-spacing: 0;
+    font-size: 1em;
+    font-family: 'Source San 3', sans-serif;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #005A8F;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.2);
+}
+
+#submit {
+    background-color: #440099;
+    color: #FEFEFE;
+    padding: 13px 5px;
+    margin-top: 1.2em;
+    border: none;
+    border-radius: 0.375em;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: color 0.5s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #005A8F;
+}
+
+/* ACCESSIBILITY PAGE MAIN CONTENT */
+
+.heading {
+    background-color: #440099;
+    padding-left: 1.5em;
+}
+
+.heading h1 {
+    color: #FEFEFE;
+    padding: 0;
+}
+
+.link {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #D0D2D4;
+    border-radius: 1.5px;
+}
+
+/* DESIGN PAGE MAIN CONTENT */
+
+.explain {
+    filter: brightness(100%);
+}

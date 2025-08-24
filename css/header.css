@@ -1,0 +1,19 @@
+/* HEADER */
+
+header {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 5vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        height: 7vh;
+    }
+}

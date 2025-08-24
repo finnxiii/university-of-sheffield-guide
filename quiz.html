@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Naing Htoo Lwin">
+    <title>University of Sheffield Guide</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/university-of-sheffield-mini-logo.png">
+</head>
+
+<body id="quiz">
+    <div id="wrapper">
+
+        <!--Top Navigation Bar-->
+        <nav id="top-nav"> 
+            <header>
+                <img src="./images/university-of-sheffield-logo.png" alt="University of Sheffield Logo" width="200" class="logo">
+            </header>
+
+            <!--Hamburger Menu Using CSS Hack-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul id="top-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendor.html">Eat & Drink</a></li>
+                <li><a href="picnic.html">Picnic Spots</a></li>
+                <li><a href="quiz.html">Quiz Time</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--Scroll Button Fixed at the Bottom Right Corner-->
+            <div class="scroll-button">
+                <a href="#top">
+                    <svg class="scroll-icon"  aria-hidden="true" focusable="false" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path>                    
+                    </svg>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="main-section">
+                    <section class="intro">
+                        <h1>Welcome to the University Quiz</h1>
+                        <p>
+                            Test your knowledge about the city of Sheffield and see how much you really know about the city!
+                        </p>
+                        <h3>How to Play:</h3>
+                        <ol class="play-guide">
+                            <li>Simply answer the questions by selecting the correct options.</li>
+                            <li>Each question has mulitple-choice answers &dash; only one is correct.</li>
+                            <li>After answering the quiz, you can see the correct answer by hovering the text below.</li>
+                        </ol>
+                        <p>
+                            Are you ready to take on the challenge?
+                            Let's see if you're the ultimate Sheffield expert!
+                        </p>
+                    </section>
+    
+                    <hr>
+
+                    <section class="quiz" id="quiz-1">
+                        <h3>Question 1</h3>
+                        <figure>
+                            <img src="./images/quiz1-image.jpg" alt="Quiz 1 Image">
+                        </figure>
+                        <p>
+                            Which park in Sheffield is known for its historic bandstand and often hosts concerts in the summer?
+                        </p>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q1a1" name="q1" value="A">
+                            <label for="q1a1">A. Crookes Valley Park</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q1a2" name="q1" value="B">
+                            <label for="q1a2">B. Weston Park</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q1a3" name="q1" value="C">
+                            <label for="q1a3">C. The Ponderosa</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q1a4" name="q1" value="D">
+                            <label for="q1a4">D. Endcliffe Park</label>
+                        </div>
+
+                        <div class="dropdown-container">
+                            <p>Hover Me for Correct Answer :</p>
+                            <span>B. Weston Park</span>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section class="quiz" id="quiz-2">
+                        <h3>Question 2</h3>
+                        <figure>
+                            <img src="./images/quiz2-image.jpg" alt="Quiz 2 Image">
+                        </figure>
+                        <p>
+                            Located on the fifth floor of the Students’ Union, which eatery offers views over Sheffield along with British and international cuisine?
+                        </p>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q2a1" name="q2" value="A">
+                            <label for="q2a1">A. The Diamond Kitchen</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q2a2" name="q2" value="B">
+                            <label for="q2a2">B. Grill & Go</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q2a3" name="q2" value="C">
+                            <label for="q2a3">C. Inox Dine</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q2a4" name="q2" value="D">
+                            <label for="q2a4">D. KFC</label>
+                        </div>
+                        
+                        <div class="dropdown-container">
+                            <p>Hover Me for Correct Answer :</p>
+                            <span>C. Inox Dine</span>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section class="quiz" id="quiz-3">
+                        <h3>Question 3</h3>
+                        <figure>
+                            <img src="./images/quiz3-image.jpg" alt="Quiz 3 Image">
+                        </figure>
+                        <p>
+                            This location is a 15-minutes walk from campus and is known for its Vicotrian-era fountains and restored glass pavillions. 
+                            Which spot is this?
+                        </p>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q3a1" name="q3" value="A">
+                            <label for="q3a1">A. Crookes Valley Park</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q3a2" name="q3" value="B">
+                            <label for="q3a2">B. The Ponderosa</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q3a3" name="q3" value="C">
+                            <label for="q3a3">C. Endcliffe Park</label>
+                        </div>
+                        <div class="question-option">
+                            <input type="radio" class="answers" id="q3a4" name="q3" value="D">
+                            <label for="q3a4">D. Botanical Gardens</label>
+                        </div>
+                        
+                        <div class="dropdown-container">
+                            <p>Hover Me for Correct Answer :</p>
+                            <span>D. Botanical Gardens</span>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section class="outro">
+                        <h1>
+                            Next Destination
+                        </h1>
+                        <p>
+                            &#x2022; <a href="accessibility.html">Our Accessibility Measures</a>
+                        </p>
+                    </section>
+
+                    <hr>
+                </div>
+
+                <!--Side Section-->
+                <aside class="side-section">
+                    <article>
+                        <h3>Contacting us</h3>
+                        <p>
+                            You can contact us via our feedback form if you have any problems.
+                        </p>
+                        <input type="button" value="Contact Page" onclick="window.location.href='contact.html'" class="button">
+                    </article>
+                    <article>
+                        <h3>Our Socials</h3>
+                        <p>
+                            You can reach out to us from here as well.
+                        </p>
+                        <div class="socials-wrapper">
+                            <figure>
+                                <a href="https://www.facebook.com/theuniversityofsheffield" target="_blank">
+                                    <img src="./images/fb-logo.jpg" alt="Facebook" class="socials">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="https://www.youtube.com/user/uniofsheffield" target="_blank">
+                                    <img src="./images/youtube-logo.jpg" alt="YouTube" class="socials">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="https://instagram.com/theuniversityofsheffield" target="_blank">
+                                    <img src="./images/ig-logo.jpg" alt="Instagram" class="socials">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="https://www.linkedin.com/school/university-of-sheffield/" target="_blank">
+                                    <img src="./images/linkedin-logo.jpg" alt="LinkedIn" class="socials">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="https://www.tiktok.com/@sheffielduni" target="_blank">
+                                    <img src="./images/tiktok-logo.jpg" alt="Tiktok" class="socials">
+                                </a>
+                            </figure>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <!--Bottom Navigation Bar-->
+            <nav id="bot-nav">
+                <ul id="bot-nav-list">
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Copyright-->
+            <div id="copyright">
+                <p>&copy; Naing Htoo Lwin, 2024</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
