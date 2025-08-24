@@ -3,7 +3,7 @@
 This project is part of the **COM1008 Web and Internet Technology** module at the **University of Sheffield**.  
 It demonstrates the practical application of fundamental web development concepts through the creation of a **responsive campus guide website**.
 
-The website is built using **HTML and CSS, following a **mobile-first responsive design** approach.  
+The website is built using **HTML** and **CSS**, following a **mobile-first responsive design** approach.  
 It adapts across devices and prioritises **accessibility**, **clean layout**, and **semantic structure**.
 
 ---
