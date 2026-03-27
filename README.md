@@ -1,87 +1,94 @@
-# University of Sheffield Guide Website
+# University of Sheffield Guide
 
-This project is part of the **COM1008 Web and Internet Technology** module at the **University of Sheffield**.  
-It demonstrates the practical application of fundamental web development concepts through the creation of a **responsive campus guide website**.
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-2E2E2E?logo=github&logoColor=white)](https://github.com/finnxiii/university-of-sheffield-guide)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?logo=netlify&logoColor=white)](https://uos-guide-finnxiii.netlify.app/)
 
-The website is built using **HTML** and **CSS**, following a **mobile-first responsive design** approach.  
-It adapts across devices and prioritises **accessibility**, **clean layout**, and **semantic structure**.
+A responsive campus guide website designed to help students explore food spots, picnic areas, and key locations around the University of Sheffield.
 
----
+Developed as part of the COM1008 Web and Internet Technology module, this project focuses on building a fully functional website using **pure HTML and CSS**, without relying on frameworks.
 
-## 🚀 Project Overview
-A responsive website providing information about food, drink, and picnic spots around the University of Sheffield campus.  
-It showcases core web technologies without the use of frameworks or libraries, highlighting fundamental front-end development skills.
+<br>
 
-### 🛠️ Tech Stack
-- **HTML5** – Semantic markup for structure  
-- **CSS3** – Styling and responsive design  
-  - Flexbox  
-  - Grid Layout  
-  - Media Queries    
-- **No frameworks/libraries** – Pure HTML and CSS 
+> [!NOTE]
+> This project intentionally avoids JavaScript frameworks to emphasise strong fundamentals in semantic HTML, responsive design, and accessibility.
 
----
+<br>
 
-## ✨ Features
-- Interactive campus guide with:
-  - Food & drink vendors  
-  - Picnic spots and parks  
-  - Interactive quiz  
-- Mobile-first responsive design (works on mobile, tablet, and desktop)  
-- Accessibility features following **WCAG guidelines**  
-- Contact form for user feedback  
-- Social media integration  
+## Overview
 
----
+The website provides a structured and user-friendly guide to campus life, including:
 
-## 📂 Project Structure
+- Food & drink locations around campus  
+- Picnic spots and green spaces  
+- An interactive quiz experience built with HTML and CSS  
+- Supporting pages covering accessibility, design, legal considerations, and testing  
 
-### Main Pages
-- `index.html` – Homepage with site overview  
-- `vendor.html` – Food and drink locations  
-- `picnic.html` – Picnic spots guide  
-- `quiz.html` – Interactive quiz  
-- `contact.html` – Contact form  
+The project demonstrates how core front-end technologies can be used to build a complete, multi-page responsive website.
 
-### Information Pages
-- `accessibility.html` – Accessibility features  
-- `legal.html` – Legal and GDPR information  
-- `design.html` – Design documentation  
-- `testing.html` – Testing documentation  
+<br>
 
-### CSS Files
-- `css/general.css` – Base styles  
-- `css/header.css` – Header styles  
-- `css/nav.css` – Navigation styles  
-- `css/main.css` – Main content styles  
-- `css/footer.css` – Footer styles  
-- `css/tablet.css` – Tablet-specific styles  
-- `css/desktop.css` – Desktop-specific styles  
+## System Structure
 
----
+```mermaid
+flowchart LR
 
-## 🌐 Technologies Used
-- HTML5  
-- CSS3  
-- Responsive Web Design (Flexbox, Grid, Media Queries)  
-- Google Fonts  
-- SVG Icons  
+A[User] --> B[Multi-Page Website]
+B --> C[HTML Pages]
+B --> D[CSS Stylesheets]
+B --> E[Assets Images and Icons]
+B --> F[External Services]
 
----
+F --> G[Google Maps Embed]
+F --> H[Google Fonts]
 
-## ♿ Accessibility Features
-- Semantic HTML structure  
-- ARIA labels  
-- High-contrast color scheme  
-- Keyboard navigation support  
-- Screen reader compatibility  
-- Responsive font sizing  
-- Alt text for images  
+subgraph Frontend
+C
+D
+E
+end
+```
 
----
+**Flow Summary**
+- Users navigate across multiple static HTML pages
+- Layout and responsiveness are controlled through modular CSS files
+- External services enhance presentation and usability through embedded maps and custom fonts
 
-## 👤 Author
-**Naing Htoo Lwin (2024)**  
-University of Sheffield  
+<br>
 
----
+## Key Features
+
+- Mobile-first responsive design
+- Multi-page campus guide experience
+-	Food and drink recommendations
+-	Picnic and outdoor location guide
+-	Interactive quiz built without JavaScript
+-	Contact form UI for user feedback
+-	Accessibility-focused semantic structure
+-	Embedded maps for key locations
+-	Consistent navigation and layout across pages  
+
+<br>
+
+## Tech Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![Responsive](https://img.shields.io/badge/Mobile--First-Responsive-6A5ACD?style=for-the-badge)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+<br>
+
+## Design Considerations
+
+- Mobile-first development: The layout was designed for smaller screens first, then progressively enhanced for tablet and desktop devices
+- Separation of concerns: Styling is split into multiple CSS files for easier maintenance and clearer structure
+- Performance optimisation: JPEG images were used where appropriate to reduce file size, and embedded maps use lazy loading
+- Scalable structure: The project can be extended later with JavaScript or migrated into a framework such as React or Next.js
+
+<br>
+
+## Motivation
+
+This project was built to strengthen my understanding of core front-end development principles through a real multi-page website.
+
+Rather than relying on libraries or frameworks, the goal was to build a clean, accessible, and responsive experience using foundational web technologies only.
