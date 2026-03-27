@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Naing Htoo Lwin" />
+		<title>University of Sheffield Guide</title>
+		<link rel="stylesheet" href="../assets/css/general.css" />
+		<link rel="stylesheet" href="../assets/css/header.css" />
+		<link rel="stylesheet" href="../assets/css/nav.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/footer.css" />
+		<link rel="stylesheet" href="../assets/css/tablet.css" />
+		<link rel="stylesheet" href="../assets/css/desktop.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/x-icon" href="../assets/images/university-of-sheffield-mini-logo.png" />
+	</head>
+
+	<body id="design">
+		<div id="wrapper">
+			<!--Top Navigation Bar-->
+			<nav id="top-nav">
+				<header>
+					<img
+						src="../assets/images/university-of-sheffield-logo.png"
+						alt="University of Sheffield Logo"
+						width="200"
+						class="logo"
+					/>
+				</header>
+
+				<!--Hamburger Menu Using CSS Hack-->
+				<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+				<label for="menu-toggle" class="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+
+				<ul id="top-nav-list">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./vendor.html">Eat & Drink</a></li>
+					<li><a href="./picnic.html">Picnic Spots</a></li>
+					<li><a href="./quiz.html">Quiz Time</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<!--Scroll Button Fixed at the Bottom Right Corner-->
+				<div class="scroll-button">
+					<a href="#top-nav">
+						<svg
+							class="scroll-icon"
+							aria-hidden="true"
+							focusable="false"
+							viewBox="0 0 512 512"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+							></path>
+						</svg>
+					</a>
+				</div>
+
+				<section class="heading">
+					<h1>Design</h1>
+				</section>
+
+				<div class="content-wrapper">
+					<div class="main-section">
+						<section class="intro">
+							<h3>On this page:</h3>
+							<ul class="option-list">
+								<li><a href="#option-1">Design Concept and Goals</a></li>
+								<li><a href="#option-2">Structure and Justification</a></li>
+								<li><a href="#option-3">Mobile-First Approach and Breakpoints</a></li>
+								<li><a href="#option-4">Menu System: Design Consideration and Justification</a></li>
+								<li><a href="#option-5">References</a></li>
+							</ul>
+						</section>
+
+						<hr />
+
+						<section class="options" id="option-1">
+							<h3>Design Concept and Goals</h3>
+							<p>
+								The design of this website is aimed at providing a serious, professional atmosphere, inspired by the
+								University of Sheffield website. The colour palette includes purple, light blue, black and white,
+								reflecting the University's formal and academic tone. These colours help create a trustworthy and
+								scholarly appearance while ensuring that the website is visually appealing and easy to navigate.
+							</p>
+						</section>
+
+						<hr />
+
+						<section class="options" id="option-2">
+							<h3>Structure and Justification</h3>
+							<figure>
+								<img src="../assets/images/sitemap.jpeg" alt="The Site Map" class="explain" />
+								<figcaption>The Site Map</figcaption>
+							</figure>
+							<p>
+								The site structure is designed to be straightforward and intuitive. The main navigation will include:
+							</p>
+							<ul class="option-list">
+								<li><strong>Home</strong>: The landing page with an introduction and links to key sections.</li>
+								<li><strong>Eat & Drink</strong>: Information on places to eat on and off the campus.</li>
+								<li><strong>Picnic Spots</strong>: A guide to the best outdoor spots for a picnic.</li>
+								<li><strong>Quiz Page</strong>: A fun and interactive quiz related to the University campus.</li>
+								<li>
+									<strong>Other Pages</strong>: Pages outlining accessibility, legal & security, design, testing and
+									contact, which are placed in the footer.
+								</li>
+							</ul>
+							<p>
+								This structure follows a logical flow from general information to more specific topics, keeping it
+								user-friendly and simple.
+							</p>
+						</section>
+
+						<hr />
+
+						<section class="options" id="option-3">
+							<h3>Mobile-First Approach and Breakpoints</h3>
+							<figure>
+								<img src="../assets/images/design-mockup.jpg" alt="Design Mockup" class="explain" />
+								<figcaption>Our Design Mockup</figcaption>
+							</figure>
+							<p>
+								The mobile-first design ensures that the site is fully responsive. The mobile version will have a clean
+								layout with a collapsible hamburger menu for navigation. On larger screens (desktop), the menu will be
+								expanded and visible, with more content displayed side-by-side. The design will use flexbox to adjust
+								content appropriately.
+							</p>
+							<p>Breakpoints and tweakpoints will be used at key screen sizes such as</p>
+							<ul class="option-list">
+								<li>Mobile (below 768px)</li>
+								<li>Tablet (768px - 1024px)</li>
+								<li>Desktop (above 1024px)</li>
+							</ul>
+							<p>
+								These breakpoints allow for smooth transitions between different screen sizes, ensuring readability and
+								usability on any device.
+							</p>
+						</section>
+
+						<hr />
+
+						<section class="options" id="option-4">
+							<h3>Menu System: Design Consideration and Justification</h3>
+							<figure>
+								<img src="../assets/images/menu-bar.jpg" alt="The Hamburger Menu" class="explain" />
+								<figcaption>Our Hamburger Menu</figcaption>
+							</figure>
+							<p>
+								For the menu system, I will implement a responsive hamburger menu on mobile devices, which will
+								transition to a horizontal navigation bar on desktop. The hamburger menu is created using the CSS
+								checkbox hack, a JavaScript-free technique. This method uses the <em>:checked</em> pseudo-class to
+								toggle the visibility of the menu items when the checkbox, styled as a hamburger icon, is clicked. It
+								provides an efficient and lightweight solution for creating a responsive and interactive menu without
+								the need for JavaScript (CSS-Tricks, 2021).
+							</p>
+						</section>
+
+						<hr />
+
+						<section class="options" id="option-5">
+							<h3>References</h3>
+							<ul class="option-list">
+								<li>
+									CSS-Tricks. (2011). The ‘Checkbox Hack’ (and things you can do with it). [online] Available at:
+									https://css-tricks.com/the-checkbox-hack/.
+								</li>
+								<li>
+									W3Schools (2024). W3Schools Online Web Tutorials. [online] W3schools.com. Available at:
+									https://www.w3schools.com/.
+								</li>
+							</ul>
+						</section>
+
+						<hr />
+
+						<section class="outro">
+							<h1>More Information</h1>
+							<p>&#x2022; <a href="./testing.html">Testing & Debugging</a></p>
+						</section>
+
+						<hr />
+					</div>
+
+					<!--Side Section-->
+					<aside class="side-section">
+						<article>
+							<h3>Contacting us</h3>
+							<p>You can contact us via our feedback form if you have any problems.</p>
+							<input
+								type="button"
+								value="Contact Page"
+								onclick="window.location.href = './contact.html'"
+								class="button"
+							/>
+						</article>
+						<article>
+							<h3>Our Socials</h3>
+							<p>You can reach out to us from here as well.</p>
+							<div class="socials-wrapper">
+								<figure>
+									<a href="https://www.facebook.com/theuniversityofsheffield" target="_blank">
+										<img src="../assets/images/fb-logo.jpg" alt="Facebook" class="socials" />
+									</a>
+								</figure>
+								<figure>
+									<a href="https://www.youtube.com/user/uniofsheffield" target="_blank">
+										<img src="../assets/images/youtube-logo.jpg" alt="YouTube" class="socials" />
+									</a>
+								</figure>
+								<figure>
+									<a href="https://instagram.com/theuniversityofsheffield" target="_blank">
+										<img src="../assets/images/ig-logo.jpg" alt="Instagram" class="socials" />
+									</a>
+								</figure>
+								<figure>
+									<a href="https://www.linkedin.com/school/university-of-sheffield/" target="_blank">
+										<img src="../assets/images/linkedin-logo.jpg" alt="LinkedIn" class="socials" />
+									</a>
+								</figure>
+								<figure>
+									<a href="https://www.tiktok.com/@sheffielduni" target="_blank">
+										<img src="../assets/images/tiktok-logo.jpg" alt="TikTok" class="socials" />
+									</a>
+								</figure>
+							</div>
+						</article>
+					</aside>
+				</div>
+			</main>
+
+			<footer>
+				<!--Bottom Navigation Bar-->
+				<nav id="bot-nav">
+					<ul id="bot-nav-list">
+						<li><a href="./accessibility.html">Accessibility</a></li>
+						<li><a href="./legal.html">Legal & Security</a></li>
+						<li><a href="./design.html">Design</a></li>
+						<li><a href="./testing.html">Testing</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!--Copyright-->
+				<div id="copyright">
+					<p>&copy; Naing Htoo Lwin, 2024</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
